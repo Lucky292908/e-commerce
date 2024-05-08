@@ -1,0 +1,96 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navigation Styles */
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 20px;
+}
+
+/* Logo Styles */
+.logo img {
+  border-radius: 5px;
+  display: block;
+  max-width: 30%;
+  height: auto;
+}
+
+/* Optional: Add padding or margin around the logo */
+.logo {
+  padding: 10px; /* Adjust padding as needed */
+}
+
+
+.nav-list {
+  display: flex;
+  list-style: none;
+}
+
+.nav-item {
+  margin-right: 15px;
+}
+
+.nav-link {
+  font-size: 18px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #007bff;
+}
+
+.cart-icon {
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+  transition: transform 0.3s ease;
+}
+
+.cart-icon:hover {
+  transform: scale(1.6); /* Scale up the icon on hover */
+}
+
+/* Badge Styles */
+.item-count,
+.cart-item-count {
+  font-size: 0.8em;
+  background-color: #ff5a5f;
+  color: #fff;
+  padding: 3px 5px;
+  border-radius: 50%;
+  margin-left: 5px;
+}
+
+/* Responsive Styles */
+@media (max-width: 700px) {
+  .nav-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-item {
+    margin: 10px 0;
+  }
+
+  /* Adjust badge position for responsive layout */
+  .cart-item-count {
+    margin-left: 0;
+    margin-top: 5px;
+  }
+}
+
+/* Active Link Styles */
+.nav-link.active {
+  color: #007bff; /* Active link color */
+  font-weight: bold; /* Example: Highlight active link */
+}

@@ -1,0 +1,288 @@
+
+  /* Styling for the heart icon image */
+  .product-button img {
+    width: 20px; /* Set the width of the image */
+    height: 20px; /* Set the height of the image */
+    vertical-align: middle; /* Align the image vertically in the button */
+  }
+  /* HomePage.css */
+
+.product-list {
+  margin: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.product-card {
+  border: 1px solid #ddd;
+ 
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease; /* Add transition for hover effect */
+}
+
+.product-card:hover {
+  transform: translateY(-5px); /* Apply lift effect on hover */
+}
+
+.product-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+ 
+  transition: transform 0.3s ease; /* Add transition for hover effect */
+}
+
+.product-image:hover {
+  transform: scale(1.05); /* Apply zoom effect on image hover */
+}
+
+.product-details {
+  padding: 10px;
+}
+
+.product-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.product-description {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.product-price {
+  font-size: 16px;
+  font-weight: bold;
+  color: #007bff;
+  margin-bottom: 5px;
+}
+
+.product-brand {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.product-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.product-button {
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Add transition for button hover effect */
+}
+
+.product-button-cart {
+  background-color: #28a745;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.product-button-cart:hover {
+  background-color: #218838; /* Darker shade of green on hover */
+  transform: translateY(-2px); /* Move button slightly up on hover */
+}
+
+.product-button-cart:focus {
+  outline: none; /* Remove default focus outline */
+}
+
+.product-button-cart:active {
+  transform: scale(0.95); /* Scale down slightly when button is clicked */
+}
+
+
+.product-button-wishlist {
+  background-color: #ff5900;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.product-button-wishlist:hover {
+  background-color: #e04d00; /* Darker shade of orange on hover */
+}
+
+.product-button-wishlist:focus {
+  outline: none; /* Remove default focus outline */
+}
+
+.product-button-wishlist:active {
+  transform: scale(0.95); /* Scale down slightly when button is clicked */
+}
+
+.pagination {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.page-number {
+  padding: 5px 10px;
+  margin-right: 5px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Add transition for button hover effect */
+}
+
+.page-number:hover {
+  
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .product-list {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}
+
+.h{
+
+margin-top: 10px;
+
+}
+
+
+.product-card {
+  /* Styling for product card */
+  border: 1px solid #ddd;
+ 
+  padding: 16px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.product-card:hover {
+  /* Hover effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-image {
+  /* Styling for product image */
+  width: 100%;
+  height: 300px;
+
+}
+
+
+
+.product-brand {
+  /* Styling for product brand */
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.product-price {
+  /* Styling for product price */
+  font-size: 16px;
+  color: #007bff; /* Blue color for price */
+  margin-bottom: 8px;
+}
+
+.product-stock {
+  /* Styling for product stock */
+  font-size: 14px;
+  color: #28a745; /* Green color for in-stock */
+  margin-bottom: 8px;
+}
+
+.discount {
+  /* Styling for discount percentage */
+  font-size: 14px;
+  color: #dc3545; /* Red color for discount */
+  margin-bottom: 8px;
+}
+/* Styles for the image slider container */
+.image-slider-container {
+  width: 100%;
+  height: 300px; /* Adjust the height as needed */
+  overflow: hidden;
+  position: relative;
+}
+
+/* Styles for the image slider */
+.image-slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Style for individual slide */
+.slide {
+  flex: 0 0 100%; /* Each slide occupies full width */
+}
+
+/* Ensure the active slide is fully visible */
+.slide.active {
+  opacity: 1;
+}
+
+/* Hide other slides */
+.slide:not(.active) {
+  opacity: 0;
+}
+
+/* Configure image transitions */
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Continuous sliding animation */
+@keyframes slideAnimation {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+
+
+
+
+/* 
+
+ .main-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+}
+
+.left-part {
+  flex: 1; 
+   padding: 20px;
+  margin: 20px;
+  background-color: #dedede;
+}
+
+.right-part {
+  flex: 5; 
+  padding: 20px;
+  background-color: #dedede;
+  margin: 20px;
+} 
+
+ */

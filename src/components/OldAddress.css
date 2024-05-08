@@ -1,0 +1,41 @@
+.old-address {
+    margin-top: 20px;
+  }
+  
+  .address-details {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .address-details p {
+    margin: 5px 0;
+  }
+  
+  .address-details input {
+    margin-bottom: 5px;
+    padding: 5px;
+    width: 100%;
+  }
+  
+  .address-details button {
+    margin-right: 5px;
+    cursor: pointer;
+    padding: 5px 10px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 3px;
+  }
+  
+  .address-details button:hover {
+    background-color: #0056b3;
+  }
+  
+  .form-title {
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #333;
+  }
+  

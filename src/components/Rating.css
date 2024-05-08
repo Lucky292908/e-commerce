@@ -1,0 +1,63 @@
+/* Rating.css */
+
+/* Base styles for the rating component */
+.rating {
+    display: inline-block;
+    position: relative;
+    font-size: 1.5rem; /* Adjust font size as needed */
+    color: #ffd700; /* Default gold color for stars */
+  }
+  
+  /* Styling for the tooltip */
+  .tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  /* Tooltip text display on hover */
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+  
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 1;
+    top: 110%; /* Position below the rating */
+    left: 50%;
+    transform: translateX(-50%);
+  
+    /* Fade in animation on hover */
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  /* Show tooltip text on hover */
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  /* Star icon styling */
+  .rating-icon {
+    margin-right: 5px; /* Spacing between stars */
+  }
+  
+  /* Color variations based on rating */
+  .low-rating {
+    color: #ff6347; /* Red color for low ratings */
+  }
+  
+  .filled {
+    color: #ffd700; /* Default gold color for medium ratings */
+  }
+  
+  .high-rating {
+    color: #32cd32; /* Green color for high ratings */
+  }
+  
